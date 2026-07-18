@@ -5,85 +5,109 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidad — FitCoach</title>
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; line-height: 1.65;
-         color: #1c1c1e; background: #fff; }
-  @media (prefers-color-scheme: dark) { body { color: #e5e5e7; background: #111; } a { color: #9be15d; } }
-  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid rgba(128,128,128,.25); padding-bottom: .35rem; }
-  .muted { color: #8a8a8e; font-size: .9rem; }
-  code { background: rgba(128,128,128,.15); padding: .1rem .35rem; border-radius: 4px; }
-  a { color: #4a8f1e; }
+  :root{color-scheme:light dark;--bg:#f4f6f7;--panel:#fff;--ink:#1b1f24;--dim:#6b7178;--line:rgba(0,0,0,.1);--lime:#4a7c00;--brand:#c8ff2e}
+  @media(prefers-color-scheme:dark){:root{--bg:#14181d;--panel:#20252c;--ink:#eaf2f0;--dim:#9aa3ab;--line:rgba(255,255,255,.1);--lime:#c8ff2e}}
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:0 auto;padding:0 1.25rem 4rem;line-height:1.65;color:var(--ink);background:var(--bg)}
+  .hero{text-align:center;padding:3rem 0 1.25rem}
+  .hero img{width:78px;height:78px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+  .hero h1{font-size:1.55rem;margin:.9rem 0 .2rem;letter-spacing:-.02em}
+  .hero .tag{color:var(--dim);font-size:.95rem;margin:0}
+  h2{font-size:1.12rem;margin-top:2rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+  a{color:var(--lime);font-weight:600}
+  .muted{color:var(--dim);font-size:.9rem}
+  ul{padding-left:1.2rem}
+  code{background:rgba(128,128,128,.15);padding:.1rem .35rem;border-radius:4px}
+  .pill{display:inline-block;background:var(--brand);color:#10130a;font-weight:800;font-size:.7rem;letter-spacing:.06em;padding:.28rem .6rem;border-radius:999px;text-transform:uppercase;margin-bottom:.4rem}
+  nav{text-align:center;margin-top:2.5rem;font-size:.9rem}
 </style>
 </head>
 <body>
-<h1>Política de Privacidad de FitCoach</h1>
-<p class="muted">Última actualización: 13 de julio de 2026</p>
+<div class="hero">
+  <img src="icon.png" alt="FitCoach">
+  <h1>Política de Privacidad</h1>
+  <p class="tag">FitCoach — Entrenamiento para iPhone y Apple Watch</p>
+</div>
 
-<p>FitCoach ("la app") es una aplicación de entrenamiento para iPhone y Apple Watch.
-Tu privacidad es fundamental para nosotros. Esta política explica qué datos maneja la app,
-cómo se usan y con quién se comparten (respuesta corta: con nadie).</p>
+<p><span class="pill">Sin anuncios · Sin cuentas · Sin terceros</span></p>
+<p class="muted">Última actualización: 17 de julio de 2026</p>
+
+<p>Tu privacidad es el centro de FitCoach. Esta política explica qué datos maneja la app,
+dónde viven y con quién se comparten (respuesta corta: <strong>con nadie</strong>). FitCoach
+no tiene servidores propios, no usa herramientas de análisis y no integra servicios de
+terceros: todo se apoya únicamente en los servicios del propio sistema de Apple que ya usas.</p>
 
 <h2>1. Qué datos maneja la app</h2>
 <ul>
   <li><strong>Datos de entrenamiento</strong> que tú introduces: rutinas, ejercicios, series, repeticiones y pesos.</li>
-  <li><strong>Datos de salud y actividad (Apple HealthKit)</strong>: durante una sesión, la app lee tu
-      <strong>frecuencia cardiaca</strong> desde el Apple Watch para guiarte (zonas de esfuerzo, recuperación
-      del pulso) y escribe tus entrenamientos como sesiones de ejercicio en la app Salud de Apple.</li>
-  <li><strong>Cámara y fotos</strong>: si tú lo eliges, puedes tomar una foto (con la cámara) o elegir una de tu
-      galería como <strong>foto de referencia</strong> de un ejercicio (por ejemplo, la máquina del gimnasio).
-      La cámara también se usa para escanear el código QR de una rutina compartida.</li>
-  <li><strong>Bluetooth</strong>: la función "Entrenar juntos" usa Bluetooth para conectar dos iPhones cercanos
-      y pasar turnos durante un entreno compartido.</li>
+  <li><strong>Salud y actividad (Apple HealthKit)</strong>: durante una sesión, la app lee tu
+      <strong>frecuencia cardiaca</strong> del Apple Watch para guiarte y escribe tus entrenamientos
+      como sesiones de ejercicio en la app Salud.</li>
+  <li><strong>Cámara y fotos</strong>: si tú lo eliges, una foto de referencia de un ejercicio; y la
+      cámara para escanear el QR de una rutina compartida.</li>
+  <li><strong>Bluetooth</strong>: la función "Entrenar juntos" conecta dos iPhones cercanos para pasar turnos.</li>
 </ul>
 
 <h2>2. Dónde se guardan tus datos</h2>
-<p>Todos tus datos se almacenan <strong>localmente en tu dispositivo</strong> y, en el caso de los datos de salud,
-en <strong>Apple HealthKit</strong>, protegido por el sistema operativo. FitCoach <strong>no tiene servidores
-propios</strong>: no subimos, transmitimos ni almacenamos tu información en la nube ni en ningún sistema externo.</p>
-
-<h2>3. Datos de salud (HealthKit)</h2>
-<p>De acuerdo con las reglas de Apple y nuestro compromiso contigo:</p>
+<p>Tus datos se almacenan <strong>localmente en tu dispositivo</strong>. Además:</p>
 <ul>
-  <li>Los datos de HealthKit <strong>nunca se usan con fines publicitarios ni de marketing</strong>.</li>
-  <li>Los datos de HealthKit <strong>nunca se venden ni se comparten</strong> con terceros.</li>
-  <li>Solo se usan dentro de la app para mostrarte tu progreso y guiar tu entrenamiento.</li>
-  <li>Puedes revocar el acceso a HealthKit en cualquier momento desde Ajustes → Salud → Acceso y dispositivos.</li>
+  <li><strong>Respaldo en iCloud (privado).</strong> Si tienes sesión de iCloud, FitCoach usa
+      <strong>CloudKit privado de Apple</strong> para respaldar tus rutinas y ajustes y sincronizarlos
+      entre <em>tus propios dispositivos</em> con tu mismo Apple ID. Estos datos viven en <strong>tu</strong>
+      iCloud personal, cifrados por Apple; <strong>el desarrollador nunca los ve ni tiene acceso a ellos</strong>.
+      No se requieren cuentas ni contraseñas nuestras. Si no usas iCloud, la app funciona 100% local.</li>
+  <li>Los datos de salud se guardan en <strong>Apple HealthKit</strong>, protegidos por el sistema.</li>
+</ul>
+<p>FitCoach <strong>no tiene servidores propios</strong> y no sube tu información a ningún sistema externo nuestro.</p>
+
+<h2>3. Notificaciones</h2>
+<ul>
+  <li><strong>Recordatorios locales</strong> (entreno del día, racha, récords): los agenda tu propio
+      teléfono. No salen del dispositivo.</li>
+  <li><strong>Notificaciones push</strong>: si concedes el permiso, la app se registra en el servicio de
+      notificaciones de Apple (APNs) para poder recibir avisos. <strong>No usamos ningún servicio de push
+      de terceros</strong> y no asociamos las notificaciones a tu identidad ni te rastreamos con ellas.
+      Puedes desactivarlas en Ajustes → FitCoach → Notificaciones.</li>
 </ul>
 
-<h2>4. Fotos de referencia (cámara y galería)</h2>
-<p>Las fotos de referencia que tomes o elijas se guardan <strong>únicamente en tu dispositivo</strong>, junto al
-ejercicio. <strong>No se suben a ningún servidor.</strong> Una foto solo sale de tu teléfono si <strong>tú</strong>
-decides compartir una rutina que la incluye (por ejemplo, enviando el archivo de la rutina a tu coach por WhatsApp
-o AirDrop); en ese caso viaja directamente en el archivo que tú envías, sin pasar por nosotros. Puedes quitar
-cualquier foto desde la ficha del ejercicio. Puedes revocar el permiso de cámara en Ajustes → FitCoach.</p>
+<h2>4. Datos de salud (HealthKit)</h2>
+<ul>
+  <li><strong>Nunca</strong> se usan con fines publicitarios ni de marketing.</li>
+  <li><strong>Nunca</strong> se venden ni se comparten con terceros.</li>
+  <li>Solo se usan dentro de la app para mostrarte tu progreso y guiar tu entrenamiento.</li>
+  <li>Puedes revocar el acceso en Ajustes → Salud → Acceso y dispositivos.</li>
+</ul>
 
-<h2>5. Datos de la función "Entrenar juntos"</h2>
-<p>La conexión entre dos iPhones es directa por Bluetooth (peer to peer). La información intercambiada
-(estado del turno de la rutina) <strong>no pasa por ningún servidor</strong> y no se conserva tras la sesión.</p>
+<h2>5. Fotos de referencia</h2>
+<p>Las fotos que tomes o elijas se guardan <strong>solo en tu dispositivo</strong> (y en tu respaldo privado
+de iCloud, si lo usas). Una foto solo sale de tu teléfono si <strong>tú</strong> decides compartir una rutina
+que la incluye (por ejemplo enviando el archivo por WhatsApp o AirDrop); viaja directo en ese archivo, sin
+pasar por nosotros. Puedes quitarla desde la ficha del ejercicio y revocar el permiso de cámara en Ajustes.</p>
 
-<h2>6. Publicidad y análisis</h2>
-<p>FitCoach <strong>no incluye publicidad</strong>, <strong>no usa rastreadores</strong> y <strong>no integra
-herramientas de análisis de terceros</strong>. No hay identificadores de seguimiento.</p>
+<h2>6. Función "Entrenar juntos"</h2>
+<p>La conexión entre dos iPhones es directa por Bluetooth (peer to peer). La información del turno
+<strong>no pasa por ningún servidor</strong> y no se conserva tras la sesión.</p>
 
-<h2>7. Terceros</h2>
-<p>No compartimos tus datos con terceros. La app no realiza llamadas a servicios externos con tus datos personales.</p>
+<h2>7. Publicidad, análisis y terceros</h2>
+<p>FitCoach <strong>no incluye publicidad</strong>, <strong>no usa rastreadores ni análisis</strong> y
+<strong>no integra servicios de terceros</strong>. No hay identificadores de seguimiento. Los únicos servicios
+que intervienen son los del propio sistema de Apple (HealthKit, iCloud/CloudKit y APNs), que operan bajo
+las políticas de privacidad de Apple y a los que el desarrollador no tiene acceso a tus datos.</p>
 
 <h2>8. Menores</h2>
 <p>FitCoach no está dirigida a menores de 13 años y no recopila conscientemente datos de menores.</p>
 
 <h2>9. Tus derechos</h2>
-<p>Como tus datos viven en tu dispositivo, tienes control total: puedes eliminarlos borrando los registros
-dentro de la app, revocando permisos de Salud, o desinstalando la aplicación (lo que elimina los datos locales de FitCoach).</p>
+<p>Tus datos viven en tu dispositivo y en tu iCloud personal: tienes control total. Puedes borrarlos dentro
+de la app, revocar permisos de Salud, o desinstalar la aplicación (lo que elimina los datos locales de FitCoach).</p>
 
 <h2>10. Cambios en esta política</h2>
-<p>Si actualizamos esta política, publicaremos la nueva versión en esta misma página con su fecha.</p>
+<p>Si actualizamos esta política, publicaremos la nueva versión aquí con su fecha.</p>
 
 <h2>11. Contacto</h2>
 <p>¿Preguntas sobre tu privacidad? Escríbenos a
 <a href="mailto:jpcruzgarcia88@gmail.com">jpcruzgarcia88@gmail.com</a>.</p>
 
-<p class="muted">FitCoach — App de entrenamiento para iPhone y Apple Watch.</p>
+<nav><a href="soporte.html">Soporte</a> · <a href="terminos.html">Términos</a></nav>
 </body>
 </html>

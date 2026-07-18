@@ -5,21 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Soporte — FitCoach</title>
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; line-height: 1.65;
-         color: #1c1c1e; background: #fff; }
-  @media (prefers-color-scheme: dark) { body { color: #e5e5e7; background: #111; } a { color: #9be15d; } }
-  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid rgba(128,128,128,.25); padding-bottom: .35rem; }
-  .muted { color: #8a8a8e; font-size: .9rem; }
-  a { color: #4a8f1e; }
-  .card { background: rgba(128,128,128,.1); border-radius: 12px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  :root{color-scheme:light dark;--bg:#f4f6f7;--panel:#fff;--ink:#1b1f24;--dim:#6b7178;--line:rgba(0,0,0,.1);--lime:#4a7c00;--brand:#c8ff2e}
+  @media(prefers-color-scheme:dark){:root{--bg:#14181d;--panel:#20252c;--ink:#eaf2f0;--dim:#9aa3ab;--line:rgba(255,255,255,.1);--lime:#c8ff2e}}
+  *{box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:0 auto;padding:0 1.25rem 4rem;line-height:1.65;color:var(--ink);background:var(--bg)}
+  .hero{text-align:center;padding:3rem 0 1.25rem}
+  .hero img{width:78px;height:78px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+  .hero h1{font-size:1.55rem;margin:.9rem 0 .2rem;letter-spacing:-.02em}
+  .hero .tag{color:var(--dim);font-size:.95rem;margin:0}
+  h2{font-size:1.12rem;margin-top:2rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+  a{color:var(--lime);font-weight:600}
+  .muted{color:var(--dim);font-size:.9rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.3rem;margin:1.2rem 0}
+  .q{font-weight:700;margin-top:1.3rem}
+  nav{text-align:center;margin-top:2.5rem;font-size:.9rem}
 </style>
 </head>
 <body>
-<h1>Soporte de FitCoach</h1>
-<p class="muted">Entrenador en tu muñeca — iPhone + Apple Watch</p>
+<div class="hero">
+  <img src="icon.png" alt="FitCoach">
+  <h1>Soporte</h1>
+  <p class="tag">Entrenador en tu muñeca — iPhone + Apple Watch</p>
+</div>
 
 <div class="card">
   <strong>Contacto directo</strong><br>
@@ -29,29 +36,36 @@
 
 <h2>Preguntas frecuentes</h2>
 
-<p><strong>¿Necesito un Apple Watch?</strong><br>
-No es obligatorio, pero FitCoach saca lo mejor de sí con el Apple Watch: mantiene la sesión activa,
-lee tu frecuencia cardiaca y te guía por hápticos mientras el teléfono se queda en el bolsillo.</p>
+<p class="q">¿Necesito un Apple Watch?</p>
+<p>No es obligatorio, pero FitCoach saca lo mejor con el Apple Watch: mantiene la sesión activa, lee tu
+frecuencia cardiaca y te guía por hápticos mientras el teléfono se queda en el bolsillo.</p>
 
-<p><strong>¿Por qué me pide permiso de Salud (HealthKit)?</strong><br>
-Para leer tu frecuencia cardiaca durante el entreno (zonas de esfuerzo y recuperación del pulso) y para
-registrar tus entrenamientos en la app Salud. Tus datos de salud se quedan en tu dispositivo; nunca se
-comparten ni se usan para publicidad.</p>
+<p class="q">¿Mis datos están en la nube?</p>
+<p>Solo en <strong>tu iCloud personal</strong>, de forma privada. FitCoach usa el respaldo de iCloud (CloudKit
+privado de Apple) para sincronizar tus rutinas entre <em>tus</em> dispositivos con tu mismo Apple ID. Esos datos
+son tuyos y están cifrados por Apple; <strong>el desarrollador nunca los ve</strong>. Si no usas iCloud, la app
+funciona 100% local. No tenemos servidores propios.</p>
 
-<p><strong>¿Cómo funciona "Entrenar juntos"?</strong><br>
-Conecta dos iPhones cercanos por Bluetooth para compartir una rutina y pasar turnos. La conexión es directa
-entre dispositivos, sin servidores.</p>
+<p class="q">¿Cómo funcionan las notificaciones?</p>
+<p>Los recordatorios (entreno del día, racha, récords) los agenda tu propio teléfono. Si activas las
+notificaciones, puedes desactivarlas cuando quieras en Ajustes → FitCoach → Notificaciones. No usamos servicios
+de push de terceros ni te rastreamos.</p>
 
-<p><strong>¿Mis datos están en la nube?</strong><br>
-No. FitCoach guarda todo localmente en tu dispositivo. Si desinstalas la app, se eliminan los datos locales.</p>
+<p class="q">¿Por qué me pide permiso de Salud (HealthKit)?</p>
+<p>Para leer tu frecuencia cardiaca durante el entreno y registrar tus sesiones en la app Salud. Tus datos de
+salud nunca se comparten ni se usan para publicidad.</p>
 
-<p><strong>¿La app tiene publicidad o costes ocultos?</strong><br>
-No. FitCoach no tiene publicidad ni rastreadores.</p>
+<p class="q">¿Cómo funciona "Entrenar juntos"?</p>
+<p>Conecta dos iPhones cercanos por Bluetooth para compartir una rutina y pasar turnos. Conexión directa entre
+dispositivos, sin servidores.</p>
+
+<p class="q">¿La app tiene publicidad o costes ocultos?</p>
+<p>No. FitCoach es gratuita, sin publicidad, sin rastreadores y sin cuentas.</p>
 
 <h2>Reportar un problema o sugerencia</h2>
 <p>Escríbenos a <a href="mailto:jpcruzgarcia88@gmail.com">jpcruzgarcia88@gmail.com</a> indicando tu modelo de
-iPhone y versión de iOS, y una descripción de lo que ocurrió. Con gusto te ayudamos.</p>
+iPhone, tu versión de iOS y una descripción de lo que ocurrió. Con gusto te ayudamos.</p>
 
-<p class="muted">Consulta también nuestra <a href="privacidad.html">Política de Privacidad</a>.</p>
+<nav><a href="privacidad.html">Política de Privacidad</a> · <a href="terminos.html">Términos</a></nav>
 </body>
 </html>
